@@ -1,13 +1,12 @@
-function removeDuplicates(arr) {
+function removeDuplicates(arrs) {
   let uniqueArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (uniqueArr.indexOf(arr[i]) === -1) {
-      uniqueArr.push(arr[i]);
+  arrs.forEach(arr => {
+    if (uniqueArr.indexOf(arr) === -1) {
+      uniqueArr.push(arr);
     }
-  }
+  });
   return uniqueArr;
 }
 
-const arr = [11, 11, 3, 4, 7, 9, 7, 9, 3, 3];
-const newArr = removeDuplicates(arr);
-console.log(newArr);
+const arrs = [1,2,2,3,3,3,4,4,4,4,5,5,5,5,5];
+console.log(removeDuplicates(arrs));

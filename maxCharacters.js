@@ -27,7 +27,7 @@ function findMostFrequentChar(text) {
   
     return result;
   }
+
   
-  let text = 'hello world';
-  let result = findMostFrequentChar(text);
-  console.log(result);
+let text = 'hello world';
+console.log(findMostFrequentChar(text));

@@ -11,6 +11,6 @@ function rotateArray(arr, rounds) {
     return rotatedArray;
   }
 
-let result = rotateArray([1,2,3,4,5], 2);
-
-console.log(result);
+let arr = [1,2,3,4,5];
+let round = 2;
+console.log(rotateArray(arr, round));
